@@ -8,7 +8,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&amp;subset=korean" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+  <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.css">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
@@ -25,82 +26,356 @@
   <!-- endbuild -->
 </head>
 <body>
-<!--[if IE]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div id="header">
-  <div class="header-inner">
-    <h1 class="header-lg">
-      <a href="/" class="header-lg-link">
-        <img src="http://www.seoul.go.kr/v2016/images/main/seoul-logo-mobile.png" alt="서울특별시" width="100" />
-      </a>
-    </h1>
-
-    <ul class="header-nav clearfix">
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">로그인</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">나의서울</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">전자우편</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">서울소개</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">시민참여</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">부서안내</a>
-      </li>
-      <li class="header-nav-list">
-        <a href="#" class="header-nav-link">청사안내</a>
-      </li>
-    </ul>
-
-    <ul class="header-nav-local clearfix">
-      <li class="header-nav-local-list">
-        <a href="#" class="header-nav-local-link">
-          서울소식
-        </a>
-      </li>
-      <li class="header-nav-local-list">
-        <a href="#" class="header-nav-local-link">
-          응답소
-        </a>
-      </li>
-      <li class="header-nav-local-list">
-        <a href="#" class="header-nav-local-link">
-          정보공개
-        </a>
-      </li>
-      <li class="header-nav-local-list">
-        <a href="#" class="header-nav-local-link">
-          메뉴
-        </a>
-      </li>
-    </ul>
+    <header>
+      <div class="header_top">
+          <div class="header_top_inner clearfix">
+              <h1 class="header_top_logo">
+                  <a href="" class="header_top_logo_link">
+                      <img src="./images/seoul-logo-mobile.png" alt="">
+                  </a>
+              </h1>
+              <!-- 중앙 nav 시작 -->
+              <nav class="seoul_gnb">
+                  <ul class="seoul_gnb_wrap clearfix">
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">로그인</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">나의서울</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">전자우편</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">서울소개</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link right-line">시민참여</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">부서안내</a>
+                      </li>
+                      <li class="seoul_gnb_list">
+                          <a href="" class="seoul_gnb_link">청사안내</a>
+                      </li>
+                  </ul>
+              </nav>
+              <ul class="seoul_link clearfix">
+                  <li class="seoul_link_list blank_left"></li>
+                  <li class="seoul_link_list seoul_news">
+                      <a href="" class="link_list_link">서울소식</a>
+                  </li>
+                  <li class="seoul_link_list seoul_response">
+                      <a href="" class="link_list_link">응답소</a>
+                  </li>
+                  <li class="seoul_link_list seoul_intelligence">
+                      <a href="" class="link_list_link">정보공개</a>
+                  </li>
+                  <li class="seoul_link_list seoul_field_button">
+                        <button>분야별정보 열기</button>
+                        <div class="seoul_field_menu blind">
+                            
+                            <div class="field_menu_top">
+                                <div class="field_menu_title">분야별 정보</div>
+                                <div class="field_menu_close_icon">분야별 정보 닫기</div>
+                                <div class="field_menu_tooltip_icon"></div>
+                            </div>
+                            
+                            <div class="field_menu clearfix">
+                               <div class="field_menu_left">
+                                    <ul class="field_menu_left_wrap">
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section1"></span>
+                                                복지
+                                            </a>
+                                        </li>
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section2"></span>
+                                                경제·일자리
+                                            </a>
+                                        </li>
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section3"></span>
+                                                주택·도시계획
+                                            </a>
+                                        </li>
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section4"></span>
+                                                문화·관광
+                                            </a>
+                                        </li>
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section5"></span>
+                                                교통
+                                            </a>
+                                        </li>
+                                        <li class="field_menu_list">
+                                            <a href="" class="field_menu_link_left">
+                                                <span class="field_menu_icon field_section6"></span>
+                                                세금
+                                            </a>
+                                        </li>
+                                    </ul>
+                               </div>
+                               <div class="field_menu_right">
+                                    <ul class="field_menu_right_wrap">
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_family"></span>
+                                            <a href="" class="field_menu_link_right">  여성·가족</a>
+                                        </li>
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_safety"></span>
+                                            <a href="" class="field_menu_link_right">  안전</a>
+                                        </li>
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_environment"></span>
+                                            <a href="" class="field_menu_link_right">  환경</a>
+                                        </li>
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_health"></span>
+                                            <a href="" class="field_menu_link_right">  건강</a>
+                                        </li>
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_build"></span>
+                                            <a href="" class="field_menu_link_right">  건설</a>
+                                        </li>
+                                        <li class="field_menu_list_right">
+                                            <span class="field_menu_icon_right icon_government"></span>
+                                            <a href="" class="field_menu_link_right">  행정</a>
+                                        </li>
+                                    </ul>
+                               </div>
+                           </div>
+                           <div class="service_total_view">
+                                <span class="service_total_icon"></span>
+                               <a href="" class="service_total_link">
+                                   
+                                     서비스 전체보기
+                               </a>
+                           </div> 
+                        </div>
+                  </li>
+                  <li class="seoul_link_list blank_right"></li>
+              </ul>
+          </div>
+      </div>
+      <div class="header_bottom">
+          <div class="header_bottom_inner clearfix">
+              <h1 class="header_bottom_logo">
+                  <a href="">
+                      <img src="./images/pic-iseoulu-logo.png" alt="">
+                  </a>
+              </h1>
+              <div class="search_box">
+                <form class="search_box_inner" action="">
+                    <input class="input_search" type="text" placeholder="검색어를 입력하세요" required autofocus>
+                    <button class="search_button" type="submit">
+                    </button>
+                </form>
+              </div>
+              <form class="select_language_form">
+                <select class="select_language" name="language" id="">
+                    <option class="language_option" value="">ENGLISH</option>
+                    <option class="language_option" value="">日本語</option>
+                </select>
+                <a href="http://www.naver.com/" target="_blank">
+                    <span class="language_go_button">GO</span>
+                </a>
+              </form>
+              <ul class="search_list_wrap clearfix">
+                  <li class="search_list"><a href="" class="search_word">면접정장 무료 대여</a></li>
+                  <li class="search_list"><a href="" class="search_word">서울로 7017</a></li>
+                  <li class="search_list"><a href="" class="search_word">청년통장</a></li>
+              </ul>
+              <div class="header_swiper">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper main_swiper_wrapper">
+                        <div class="swiper-slide main_swiper">
+                            <a href="">
+                                <img src="./images/b7b64426d71272265eeb767ff8dde888.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide main_swiper">
+                            <a href="">
+                                <img src="./images/5bd45e55b9ef78a79996cb43c448f260.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide main_swiper">
+                            <a href="">
+                                <img src="./images/a4d15fc38cd9a9385c6c35c40c57f540.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination main_swiper_pagination "></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next main_btn_next"></div>
+                    <div class="swiper-button-prev main_btn_prev"></div>
+                </div>
+            </div>
+          </div>
+      </div>
+    
+  </header>
+  <div class="container">
+      <div class="container_inner">
+          <div class="content_top clearfix">
+              <div class="content_top_left">
+                  <div class="seoul_field_info_wrap">
+                      <h3 class="field_info_title">
+                          <img src="./images/txt-field.png" alt="분야별 정보 서비스">
+                      </h3>
+                      <ul class="field_info_list_wrap clearfix">
+                            <li class="field_info_list welfare_info">
+                                <a href="" class="field_info_link">복지</a>
+                            </li>
+                            <li class="field_info_list woman_info">
+                                <a href="" class="field_info_link">여성</a>
+                            </li>
+                            <li class="field_info_list economy_info">
+                                <a href="" class="field_info_link">경제</a>
+                            </li>
+                            <li class="field_info_list safe_info">
+                                <a href="" class="field_info_link">안전</a>
+                            </li>
+                            <li class="field_info_list citybuild_info">
+                                <a href="" class="field_info_link">주택</a>
+                            </li>
+                            <li class="field_info_list env_info">
+                                <a href="" class="field_info_link">환경</a>
+                            </li>
+                            <li class="field_info_list sculture_info">
+                                <a href="" class="field_info_link">문화</a>
+                            </li>
+                            <li class="field_info_list health_info">
+                                <a href="" class="field_info_link">건강</a>
+                            </li>
+                            <li class="field_info_list traffic_info">
+                                <a href="" class="field_info_link">교통</a>
+                            </li>
+                            <li class="field_info_list infra_info">
+                                <a href="" class="field_info_link">건설</a>
+                            </li>
+                            <li class="field_info_list finance_info">
+                                <a href="" class="field_info_link">세금</a>
+                            </li>
+                            <li class="field_info_list gov_info">
+                                <a href="" class="field_info_link">행정</a>
+                            </li>
+                      </ul>
+                  </div>
+                  <div class="seoul_news_wrap">
+                        <h3>
+                            <img src="../images/txt-field-new.png" alt="분야별 새소식">
+                        </h3>
+                        <ul class="field_news_list_wrap clearfix">
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/5abc79d2c1f701.44855655.jpg" alt="">
+                                    <span class="field_name sculture_color">문화관광</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/20170527_104510.jpg" alt="">
+                                    <span class="field_name economy_color">경제</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/5abc39ccb8a193.16701399.png" alt="">
+                                    <span class="field_name sculture_color">문화관광</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list no_margin_right">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/banner_0327.jpg" alt="">
+                                    <span class="field_name health_color">건강</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/5ab8780c4b03f8.38255138.jpg" alt="">
+                                    <span class="field_name env_color">환경</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/banner_0326.jpg" alt="">
+                                    <span class="field_name gov_color">행정</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/5ab1c08eacf972.32172466.jpg" alt="">
+                                    <span class="field_name env_color">환경</span>
+                                    <div class="field_news_text"></div>
+                                </a>
+                            </li>
+                            <li class="field_news_list no_margin_right">
+                                <a href="" class="field_news_link">
+                                    <img src="./images/5ab09d260d3f45.25827798.jpg" alt="">
+                                    <span class="field_name gov_color">행정</span>
+                                    <div class="field_news_text">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="recommended_info"></div>
+              </div>
+              <div class="content_top_right">
+                  <div class="seoul_weather"></div>
+                  <div class="side_menu"></div>
+                  <div class="seoul_mayor"></div>
+                  <div class="banner_top"></div>
+                  <div class="banner_bottom"></div>
+              </div>
+          </div>
+          <div class="content_bottom">
+              <div class="seoul_story"></div>
+              <div class="side_swiper"></div>
+              <div class="seoul_service citizen"></div>
+              <div class="seoul_service business"></div>
+              <div class="seoul_service sightseeing"></div>
+          </div>
+      </div>
   </div>
-</div>
-
-
-
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:js scripts/plugins.js -->
-
-<!-- endbuild -->
-
-<!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
+<footer>
+    <div class="footer_top"></div>
+    <div class="footer_bottom"></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
 </body>
 </html>

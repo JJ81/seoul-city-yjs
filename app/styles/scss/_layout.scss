@@ -1,0 +1,52 @@
+@charset "UTF-8" ; 
+
+.header_top {
+    background : #5474c0 ;  
+}
+
+.header_top_inner {
+    height : 45px ; 
+    // line-height : 45px ; 
+    width : 100% ; 
+    max-width : 940px ; 
+    margin : 0 auto ; 
+    position : relative ; 
+}
+
+.header_bottom {
+    height : 520px ; 
+    background : url("../images/bg-header.jpg") no-repeat center center ; 
+}
+
+.header_bottom_inner {
+    width : 100% ;
+    max-width : 940px ; 
+    margin : 0 auto ; 
+    position : relative ;
+
+}
+
+.container_inner {
+    width : 100% ; 
+    max-width : 940px ; 
+    background-color : skyblue ; 
+    height : 700px ; 
+    margin : 0 auto ; 
+    padding : 15px 0 25px 0 ; 
+}
+
+.content_top_left {
+    width : 100% ; 
+    max-width : 640px; 
+    float : left ; 
+    background-color : orange ; 
+    height : 700px ; 
+}
+
+.content_top_right {
+    width : 100% ; 
+    max-width : 300px ;
+    float : right ; 
+    background-color : pink ;
+    height : 700px ; 
+}
