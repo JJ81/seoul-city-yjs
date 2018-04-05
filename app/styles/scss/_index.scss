@@ -475,7 +475,6 @@
     display : block ; 
     height : 50px ;
     line-height : 80px ; 
-
   }
 
   .field_info_list:nth-child(12) {
@@ -550,9 +549,11 @@
   
   .field_news_list a.field_news_link {
     display : block  ;
-    height : 156px ;
-    position : relative ;
-    // background : red ;  
+    height : 156px   ; 
+  }
+
+  .field_news_list {
+    height : 156px ; 
   }
 // ----------seoul_news_wrap 끝-------------
 }
