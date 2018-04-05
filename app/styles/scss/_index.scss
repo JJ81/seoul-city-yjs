@@ -491,15 +491,28 @@
    }
   
   
-  .field_news_list{
-    float : left ; 
-    position : relative ;    
+  .field_news_wrap {
+    float : left ;
+    position : relative ;     
     width : 139px ; 
     height : 163px ; 
-    margin-right : 20px ; 
+    margin-right : 20px ;
+    margin-bottom : 10px ;  
   }
   
+  dd.field_news_text {
+    width : 100% ; 
+    max-width : 139px ; 
+    height : 61px ; 
+    background : blue ;
+  }
 
+  .news_text_link {
+    display : inline-block  ; 
+    padding : 12px ; 
+    font-size : 11px ; 
+    font-weight : 700 ; 
+  }
 
   .field_news_link img {
     width : 100% ; 
@@ -542,19 +555,12 @@
     background : #856f5b ; 
   }
   
-  .field_news_text {
-    background : blue ; 
-    height : 61px ; 
-  }
-  
-  .field_news_list a.field_news_link {
-    display : block  ;
-    height : 156px   ; 
-  }
 
   .field_news_list {
-    height : 156px ; 
+    height : 102px ; 
   }
+
+  
 // ----------seoul_news_wrap 끝-------------
 }
 
