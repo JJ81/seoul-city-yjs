@@ -25,8 +25,8 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
+
 <body>
-	test
     <header>
       <div class="header_top">
           <div class="header_top_inner clearfix">
@@ -196,7 +196,7 @@
               <div class="header_swiper">
                 <!-- Swiper -->
                 <div class="swiper-container">
-                    <div class="swiper-wrapper main_swiper_wrapper">
+                    <div class="swiper-wrapper main_swiper_wrapper" >
                         <div class="swiper-slide main_swiper">
                             <a href="">
                                 <img src="./images/b7b64426d71272265eeb767ff8dde888.jpg" alt="">
@@ -215,10 +215,10 @@
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination main_swiper_pagination "></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next main_btn_next"></div>
-                    <div class="swiper-button-prev main_btn_prev"></div>
                 </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next main_btn_next"></div>
+                <div class="swiper-button-prev main_btn_prev"></div>
             </div>
           </div>
       </div>
@@ -276,12 +276,15 @@
                             <img src="../images/txt-field-new.png" alt="분야별 새소식">
                         </h3>
                         <ul class="field_news_list_wrap clearfix">
+                            
                             <li class="field_news_list">
+                                <div class="field_news_list_layout">
                                 <a href="" class="field_news_link">
                                     <img src="./images/5abc79d2c1f701.44855655.jpg" alt="">
                                     <span class="field_name sculture_color">문화관광</span>
                                     <div class="field_news_text"></div>
                                 </a>
+                                </div>
                             </li>
                             <li class="field_news_list">
                                 <a href="" class="field_news_link">
@@ -361,7 +364,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
+      spaceBetween: 0,
       centeredSlides: true,
       loop: true,
       autoplay: {
@@ -378,5 +381,6 @@
       },
     });
 </script>
+
 </body>
 </html>

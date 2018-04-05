@@ -347,18 +347,20 @@
 
     // swiper 시작 swiper 시작-------------------------
     .swiper-container {
-        width: 942px ;  
+        width:740px ;  
         position : absolute ; 
         top : 145px ; 
-        margin-left : -471px ; 
+        margin-left : -370px ; 
         left : 50% ;
+        background: #fff;
     }
 
     .swiper-wrapper {
         position : relative ; 
-        width : 742px ; 
-        margin : 0 auto ; 
-        padding : 0 100px ; 
+        //width : 742px ; 
+        //margin : 0 auto ; 
+        //padding : 0 100px ; 
+        text-align: center;
     }
 
     .main_btn_next, .main_btn_prev {
@@ -458,8 +460,6 @@
     width : 8.33333333333% ; 
     float : left ; 
     border-right : 1px solid #f7f7fa ; 
-    height : 50px ;
-    line-height : 80px ; 
     text-align : center ;
     background-color : #fff ; 
     background-repeat : no-repeat ; 
@@ -473,6 +473,8 @@
     font-size : 11px ; 
     font-weight : 700 ; 
     display : block ; 
+    height : 50px ;
+    line-height : 80px ; 
 
   }
 
@@ -488,21 +490,22 @@
      max-width : 618px ; 
      border-bottom : #dadaea ;
    }
-
-  .field_news_list {
+  
+  
+  .field_news_list{
     float : left ; 
-    position : relative ; 
+    position : relative ;    
     width : 139px ; 
     height : 163px ; 
     margin-right : 20px ; 
-  
   }
+  
+
 
   .field_news_link img {
     width : 100% ; 
     max-width : 139px ; 
-    height : 102px ; 
-
+    height : 102px ;
   }
 
   .no_margin_right {
@@ -543,11 +546,14 @@
   .field_news_text {
     background : blue ; 
     height : 61px ; 
-    // color :
   }
-
-  div,img,a {
-    margin : 0 ; 
+  
+  .field_news_list a.field_news_link {
+    display : block  ;
+    height : 156px ;
+    position : relative ;
+    // background : red ;  
   }
 // ----------seoul_news_wrap 끝-------------
 }
+
