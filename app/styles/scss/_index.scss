@@ -584,7 +584,7 @@
     margin-right : 10px ; 
     padding: 1px ;
     height : 82px ;
-    // margin-bottom : 
+    margin-bottom : 20px ; 
   }
 
   .recommend_info_title {
@@ -596,12 +596,21 @@
     float : left ; 
     width : 100% ; 
     max-width : 149px;
+    height : 82px ;
+   
+
   }
   
+  .recommend_text_title {
+    display : inline-block ; 
+    font-size : 13px ; 
+    color : blue ; 
+    padding : 0 10px 0 15px ; 
+  }
   .recommend_info_text_link {
     display : inline-block ;
-    padding :10px ; 
-    text-overflow : ellipsis ; 
+    padding : 0 10px; 
+    font-size : 14px ; 
   }
 
  
