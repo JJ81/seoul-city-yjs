@@ -583,6 +583,7 @@
     width : 299px ; 
     margin-right : 10px ; 
     padding: 1px ;
+    height : 82px ;
     // margin-bottom : 
   }
 
@@ -590,15 +591,20 @@
     float:left ; 
   }
 
-  .text_content {
-    font-size : 14px ;
+  
+  .recommend_info_text {
+    float : left ; 
+    width : 100% ; 
+    max-width : 149px;
+  }
+  
+  .recommend_info_text_link {
+    display : inline-block ;
+    padding :10px ; 
+    text-overflow : ellipsis ; 
   }
 
-  .recommend_info_text {
-    width : 100% ; 
-    max-width : 159px; 
-    float : right ; 
-  }
+ 
   
   .no_margin_right {
     margin-right : 0 ; 
