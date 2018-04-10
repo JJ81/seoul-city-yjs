@@ -33,6 +33,7 @@
     height : 700px ; 
     margin : 0 auto ; 
     padding : 15px 0 25px 0 ; 
+    border-bottom :  1px solid #dadaea ;
 }
 
 .content_top_left {
@@ -43,7 +44,8 @@
 }
 
 
-.content_right {
+
+.content_top_right {
     width : 100% ; 
     max-width : 300px ;
     float : right ; 

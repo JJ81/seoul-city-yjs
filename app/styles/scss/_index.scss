@@ -576,6 +576,7 @@
     width : 100% ; 
     max-width : 618px ; 
     margin-top : 20px ; 
+    margin-bottom : 20px ; 
   }
 
   .recommend_info_list_wrap {
@@ -618,6 +619,17 @@
   .no_margin_right {
     margin-right : 0 ; 
   }
-//----recommend_info 끝--------------
+  //----recommend_info 끝--------------
+  //-----content_top_left 끝----------
 
+  //-----content_top_right 시작--------
+  //-----seoul_weather 시작----------
+  .seoul_weather {
+    width : 100% ; 
+    width : 300px ; 
+    height : 125px ;  
+    background : url("../images/bg-weather-2017.jpg") no-repeat ; 
+  }
+  //-----seoul_weather 끝
+  //-----content_top_right 끝--------
 }
