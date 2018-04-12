@@ -560,76 +560,18 @@
     background : #856f5b ; 
   }
   
+  .field_news_text {
+    background : blue ; 
+    height : 61px ; 
+  }
+
+  .field_news_list a.field_news_link {
+    display : block  ;
+    height : 156px   ; 
+  }
 
   .field_news_list {
-    height : 102px ; 
+    height : 156px ; 
   }
-
-  
-
-  
-// -----seoul_news_wrap 끝-------------
-
-//----추천 정보 .recommend_info 시작----
-  .recommend_info_wrap {
-    background : green ; 
-    width : 100% ; 
-    max-width : 618px ; 
-    margin-top : 20px ; 
-    margin-bottom : 20px ; 
-  }
-
-  .recommend_info_list_wrap {
-    float : left  ;
-    width : 299px ; 
-    margin-right : 10px ; 
-    padding: 1px ;
-    height : 82px ;
-    margin-bottom : 20px ; 
-  }
-
-  .recommend_info_title {
-    float:left ; 
-  }
-
-  
-  .recommend_info_text {
-    float : left ; 
-    width : 100% ; 
-    max-width : 149px;
-    height : 82px ;
-   
-
-  }
-  
-  .recommend_text_title {
-    display : inline-block ; 
-    font-size : 13px ; 
-    color : blue ; 
-    padding : 0 10px 0 15px ; 
-  }
-  .recommend_info_text_link {
-    display : inline-block ;
-    padding : 0 10px; 
-    font-size : 14px ; 
-  }
-
- 
-  
-  .no_margin_right {
-    margin-right : 0 ; 
-  }
-  //----recommend_info 끝--------------
-  //-----content_top_left 끝----------
-
-  //-----content_top_right 시작--------
-  //-----seoul_weather 시작----------
-  .seoul_weather {
-    width : 100% ; 
-    width : 300px ; 
-    height : 125px ;  
-    background : url("../images/bg-weather-2017.jpg") no-repeat ; 
-  }
-  //-----seoul_weather 끝
-  //-----content_top_right 끝--------
+// ----------seoul_news_wrap 끝-------------
 }
