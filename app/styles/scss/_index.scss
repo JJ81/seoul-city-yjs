@@ -618,6 +618,48 @@
   .no_margin_right {
     margin-right : 0 ; 
   }
-//----recommend_info 끝--------------
+//----recommend_info끝--------------
+//-----seoul-weather 시작------------
+  .seoul_weather_wrap {
+    width : 300px ; 
+    height : 124px ; 
+    background : url("../images/bg-weather-2017.jpg") no-repeat ; 
+  }
+  
+  .seoul_weather_top {
 
+    height : 57px ; 
+    border-bottom: 1px solid #8bb3d5;
+    padding : 10px 15px ; 
+  }
+
+  .weather_time {
+    color : #fff ; 
+    font-size : 12px ; 
+  }
+
+  .weather_today {
+    color : #fff ; 
+    font-size : 14px ; 
+    font-weight : bold ; 
+  }
+
+  .weather_tooltip {
+    text-indent : -9999px ; 
+    width : 14px ; 
+    height : 14px ; 
+    background : url("../images/icon_all.png") no-repeat 0 0 ; 
+    margin-top : 7px ; 
+  }
+  .seoul_weather_bottom {
+
+  }
+
+  .air_wrap {
+    width : 129px ;
+    height : 40px ;  
+    padding : 3px 10px ; 
+    border-right : 1px solid #91d0f1 ; 
+  }
+//-----seoul-weather 끝--------------
 }
