@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&amp;subset=korean" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles/main.scss">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.css">
   <!-- Place favicon.ico in the root directory -->
@@ -442,18 +443,79 @@
                       <div class="seoul_weather_top">
                             <div class="weather_time">2018.4.12</div>
                             <div class="weather_today">
-                                <a href="">오늘의 날씨</a>
+                                <a href="" class="weather_today_link">
+                                    오늘의 날씨
+                                    <span class="weather_caret">
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                                </a>
                             </div>
                             <div class="weather_tooltip">
                                 <a href="https://www.naver.com/" class="weather_tooltip_link">도움말</a>
                             </div>
+                            <div class="weather_icon"></div>
+                            <div class="weather_text">맑음</div>
+                            <div class="weather_temperature">9.8˚C</div>
                       </div>
-                      <div class="seoul_weather_bottom">
-                          <div class="air_wrap"></div>
-                          <div class="traffic_wrap"></div>
+                      <div class="seoul_weather_bottom clearfix">
+                          <div class="air_wrap">
+                              <div class="weather_dust">
+                                  <div class="fine_dust_wrap clearfix">
+                                      <div class="fine_dust_title">미세먼지</div>
+                                      <div class="fine_dust_condition">보통</div>
+                                  </div>
+                                  <div class="ultrafine_particle_wrap clearfix">
+                                      <div class="ultrafine_particle_title">초미세먼지</div>
+                                      <div class="ultrafine_particle_condition">보통</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="traffic_wrap">
+                              <div class="traffic_title">
+                                  독막로22 km/h
+                              </div>
+                              <div class="traffic_condition">
+                                  서행 
+                              </div>
+                          </div>
                       </div>
                   </div>
-                  <div class="side_menu"></div>
+                  <div class="side_menu">
+                    <ul class="side_menu_left_wrap">
+                        <li class="side_list">
+                            <a href="" class="side_left_link">전체사이트</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">서울안전누리</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">보육포털</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">서울관광</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">서울의 공원</a>
+                        </li>
+                    </ul>
+                    <ul class="side_menu_right_wrap">
+                        <li class="side_list">
+                            <a href="" class="side_left_link">응답소(민원·신고)</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">부동산정보</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">서울일자리</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">공공서비스예약</a>
+                        </li>
+                        <li class="side_list">
+                            <a href="" class="side_left_link">시의회</a>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="seoul_mayor"></div>
                   <div class="banner_top"></div>
                   <div class="banner_bottom"></div>
@@ -461,7 +523,7 @@
           </div>
           <div class="content_bottom">
               <div class="seoul_story">
-                  
+    
               </div>
               <div class="side_swiper"></div>
               <div class="seoul_service citizen"></div>

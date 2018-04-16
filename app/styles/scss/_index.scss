@@ -623,6 +623,7 @@
     margin-right : 0 ; 
   }
 //----recommend_info끝--------------
+
 //-----seoul-weather 시작------------
   .seoul_weather_wrap {
     width : 300px ; 
@@ -631,7 +632,7 @@
   }
   
   .seoul_weather_top {
-
+    position : relative ; 
     height : 57px ; 
     border-bottom: 1px solid #8bb3d5;
     padding : 10px 15px ; 
@@ -642,10 +643,31 @@
     font-size : 12px ; 
   }
 
-  .weather_today {
+  .weather_today_link {
     color : #fff ; 
     font-size : 14px ; 
     font-weight : bold ; 
+    text-shadow : 2px 2px 2px #0e4b99 ; 
+  }
+
+  .weather_text {
+    position : absolute ; 
+    right : 11px ; 
+    top : 16px ; 
+    color : #ffe39d ;
+    font-size : 22px ;  
+    font-weight : 500 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ; 
+  }
+
+  .weather_temperature {
+    position : absolute ; 
+    right : 11px ; 
+    top : 42px ; 
+    color : #fff ;
+    font-size : 20px ;  
+    font-weight : 500 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ; 
   }
 
   .weather_tooltip {
@@ -660,15 +682,99 @@
   .weather_tooltip_link {
     display : block ; 
   }
-  .seoul_weather_bottom {
 
+  .weather_icon {
+    background : url("../images/weathericon_new_d0.png") no-repeat ; 
+    position : absolute ;
+    left : 50% ; 
+    top : 50% ;
+    margin : -19px 0 0 -19px ; 
+    width : 38px ; 
+    height : 38px ; 
   }
 
+
   .air_wrap {
+    float : left ; 
     width : 129px ;
     height : 40px ;  
     padding : 3px 10px ; 
     border-right : 1px solid #91d0f1 ; 
   }
+
+  .fine_dust_title {
+    float : left ;
+    color : #fff ; 
+    font-size : 13px ; 
+    font-weight : 700 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ; 
+  }
+
+  .fine_dust_condition {
+    float : right ; 
+    color : #ffe39d ;
+    font-size : 13px  ; 
+    font-weight : 500 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ;
+  }
+
+  .ultrafine_particle_title {
+    float : left ; 
+    color : #fff ; 
+    font-size : 13px ; 
+    font-weight : 700 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ; 
+  }
+
+  .ultrafine_particle_condition {
+    float : right ; 
+    color : #ffe39d ;
+    font-size : 13px  ; 
+    font-weight : 500 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ;
+  }
+
+  .traffic_wrap {
+    width : 150px ; 
+    float : right ; 
+    position : relative ; 
+  }
+  
+  .traffic_title {
+    position : absolute ; 
+    top : 3px ; 
+    left : 5px ; 
+    color : #fff ; 
+    font-size : 11px ; 
+  }
+  .traffic_condition {
+    position : absolute ; 
+    right : 10px ; 
+    top : 19px ; 
+    color : #ffe39d ;
+    font-size : 14px  ; 
+    font-weight : 700 ; 
+    text-shadow : 2px 2px 2px #0e4b99 ;
+  }
+
 //-----seoul-weather 끝--------------
+//-----side_menu 시작----------------
+.side_menu {
+  width : 298px ; 
+  border : 1px solid #d6d6d6 ; 
+  border-top : none ; 
+  background : skyblue ;
+  height : 163px ; 
+}
+
+.side_menu_left_wrap {
+  float : left; 
+  width : 50% ; 
+}
+
+.side_menu_right_wrap {
+  float : right ; 
+  width : 50%
+}
+//-----side_menu 끝------------------
 }
