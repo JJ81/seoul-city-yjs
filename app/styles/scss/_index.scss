@@ -348,6 +348,7 @@
     // swiper 시작 swiper 시작-------------------------
     .header_swiper  {
       width : 940px ; 
+      height : 334px ;  
     }
    
     .swiper-container {
@@ -376,23 +377,31 @@
         background : url("../images/btn-hotissue-control.png") no-repeat -50px -50px ;
         position : absolute ; 
         right : 35px ; 
+        margin-top : -25px ; 
+        top : 50% ; 
     }
 
     .main_btn_next:hover {
         background : url("../images/btn-hotissue-control.png") no-repeat 0px -50px ; 
         position : absolute ; 
         right : 35px ; 
+        margin-top : -25px ; 
+        top : 50% ; 
     }
     .main_btn_prev {
         background : url("../images/btn-hotissue-control.png") no-repeat 0 0 ;
         position : absolute ; 
         left : 35px ; 
+        margin-top : -25px ; 
+        top : 50% ; 
      }
 
     .main_btn_prev:hover {
         background : url("../images/btn-hotissue-control.png") no-repeat -50px 0 ; 
         position : absolute ; 
         left : 35px ; 
+        margin-top : -25px ; 
+        top : 50% ; 
     }
 
     .main_swiper_pagination {
@@ -776,5 +785,24 @@
   float : right ; 
   width : 50%
 }
+
+.side_list {
+  border-bottom : 1px solid #efeff4 ; 
+}
+.side_left_link, .side_right_link {
+  display : inline-block ; 
+  height : 32px ; 
+  line-height : 32px ; 
+}
+
+.side_icon {
+  display : inline-block ; 
+}
+.side_link {
+  color : #454545 ; 
+  font-size : 12px ;
+  padding-left : 25px ; 
+}
+
 //-----side_menu 끝------------------
 }
