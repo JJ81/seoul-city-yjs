@@ -346,15 +346,14 @@
     }
 
     // swiper 시작 swiper 시작-------------------------
-    .header_swiper  {
-      width : 940px ; 
-      height : 334px ;  
+    .header_swiper {
+      position : relative ; 
+      top : 145px ; 
+      height : 334px;
     }
-   
     .swiper-container {
         width:740px ;  
         position : absolute ; 
-        top : 145px ; 
         margin-left : -370px ; 
         left : 50% ;
         background: #fff;
@@ -803,6 +802,11 @@
   font-size : 12px ;
   padding-left : 25px ; 
 }
+
+.side_list_left {
+  border-right: 1px solid #efeff4 ;
+}
+
 
 //-----side_menu 끝------------------
 }
